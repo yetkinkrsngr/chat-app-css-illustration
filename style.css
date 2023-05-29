@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    Font-size: 16px;
+    background-color: hsl(270, 20%, 96%);
+}
+:root{
+/* #### Text
+    sub-heading at the top of the app UI */
+--Pale-Violet : hsl(276, 100%, 81%);
+    /* chat on the left */
+--Moderate-Violet: hsl(276, 55%, 52%);
+    /* chat on the right */
+--Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+/* placeholder text */
+--Grayish-Blue : hsl(206, 6%, 79%);
+/* main heading */
+--Very-Dark-Desaturated-Violet : hsl(271, 36%, 24%);
+/* paragraph */
+--Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+/* #### Gradients */
+--Light-Magenta: hsl(293, 100%, 63%);
+--Light-Violet: hsl(264, 100%, 61%);
+
+/* ### Secondary */
+--White: hsl(0, 0%, 100%);
+/* submit button background */
+--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+/* radio button outline */
+--Very-Light-Magenta : hsl(289, 100%, 72%);
+
+}
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 12px;
+    height: 100vh;
+    overflow: hidden;
+}
+img{
+    width: 25px;
+}
+.phone{
+    margin-top: 55px;
+    margin-left: 25px;
+    width: 280px;
+    height: 550px;
+    outline: 15px solid white;
+    border-radius: 15px;
+    position: relative;
+    left: -450px;
+    top: 100px;
+    z-index: 1;
+    background-color:hsl(270, 20%, 96%);
+}
+.speaker{
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    background-color: white;
+    left: 25%;
+    top: -5px;
+    border-radius: 15px;
+}
+.top-side{
+    margin-top: 35px;
+    background: linear-gradient(270deg,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 20px 20px 5px 5px;
+    height: 80px;
+}
+.top-side-content{
+    padding: 40px;
+    display: flex;
+    margin-top: -45px;
+    height: 20px;
+}
+.top-side img{
+    height: 25px;
+    border-radius: 50%;
+    outline: 1px solid white;
+    margin-left: 10px;
+}
+.left-arrow-side{
+    margin-top: 5px;
+    margin-left: -25px;
+}
+.info{
+    margin-left: 20px;
+    margin-top: -10px;
+    line-height: 5px;
+    color: #fff;
+    font-size: 10px;
+}
+.left-hamburger-icon{
+    position: absolute;
+    top: 42px;
+    right: 50px;
+}
+.chat-side{
+    padding: 5px;
+}
+.chat{
+    padding: 10px;
+    font-size: 8px;
+}
+.left-chat{
+    width: 140px;
+    border: 0;
+    border-radius: 20px;
+    background-color: hsla(276, 100%, 81%,.4);
+    color: var(--Moderate-Violet);
+    font-weight: 500;
+}
+.right-chat{
+    width: 160px;
+    border: 0;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    margin-left: 100px;
+    
+}
+.img-dog{
+    text-align: end;
+
+}
+.img-dog img{
+    width: 50px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+.photo-secret{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(270deg,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    color: white;
+    width: 220px;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 10px 5px;
+
+}
+.photo-secret img{
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    opacity: .4;
+    margin-left: 10px;
+}
+.photo-secret p{
+    margin-left: 25px;
+}
+.photo-secret h2{
+    position: absolute;
+    right: 65px;
+}
+.text-side{
+    margin-top: 5px;
+    position: relative;
+}
+.text-side input{
+    width: 250px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 0;
+    opacity: .4;
+    margin-top: 5px;
+}
+.text-side i{
+   position: absolute;
+   left: 235px;
+   bottom: 15px; 
+}
+.text{
+    width: 440px;
+    height: 300px;
+    margin-top: 20%;
+    position: relative;
+    left: -300px;
+    top: 150px;
+}
+.text h1{
+    font-size: 36px;
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-weight: 400;
+}
+.text p{
+    line-height: 25px;
+    opacity: .6;
+    padding-right: 100px;
+}
+.attribution {
+    position: relative;
+    top: -25px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  .first-bg{
+    width: 600px;
+    height: 1200px;
+    background: linear-gradient(180deg,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius:35%;
+    position: relative;
+    top: -400px;
+    left: -300px;
+  }
+  .second-bg{
+    width: 400px;
+    height: 800px;
+    background: linear-gradient(180deg,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    border-radius: 250px;
+    position: relative;
+    left: -180px;
+    top: 150px;
+    opacity: .1;
+  }
